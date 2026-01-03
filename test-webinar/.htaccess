@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /test-webinar/
+RewriteCond $1 !^(images|stylesheets|javascript)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /test-webinar/index.php/$1 [L]

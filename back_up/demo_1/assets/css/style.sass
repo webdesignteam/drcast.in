@@ -1,0 +1,114 @@
+// Framwork Styles
+@import '../bootstrap-4.3.1/sass/bootstrap'
+//icon Fonts
+@import '../font-awesome-4.7.0/scss/font-awesome'
+//import Web Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700,900&display=swap');
+
+//theme_variables
+@import '_theme_variables'
+@import '_sass_custom_attributes'
+
+*
+  padding: 0
+  margin: 0
+html 
+  scroll-behavior: smooth  
+body
+  font-family: $lato
+a
+  color: $primary-color
+  &:hover
+    color: $tertiary-color
+    text-decoration: none
+
+input
+  outline: none 0px
+
+::-moz-selection 
+  color: $text-primary-color
+  background: $primary-color
+
+::selection 
+  color: $text-primary-color
+  background: $primary-color
+
+// Common Styles
+// Nav Bar Fixed    
+.fixed-me
+  padding: 1% 10.1% !important
+  position: fixed !important
+  top: 0
+  left: 0
+  z-index: 99999
+  width: 100%
+
+.header-section 
+  background-color: #ffffff;
+
+.website-nav
+  background-color: #ffffff !important
+  padding: 5px 0
+
+// Page Loading
+#loading
+  position: fixed
+  width: 100%
+  height: 100vh
+  background: #ffffff url('../../assets/img/Spin.gif') no-repeat center
+  z-index: 99999
+
+// Go to top Button
+#myBtn 
+  display: none
+  position: fixed
+  bottom: 20px
+  right: 30px
+  z-index: 99
+  font-size: 18px
+  border: none
+  outline: none
+  background-color: red
+  color: white
+  cursor: pointer
+  padding: 15px
+  border-radius: 4px
+  &:hover
+    background-color: #555
+
+// Scrollpy
+.scrollpy
+  li
+    a.active
+      color: $active-color !important
+    a
+      &:hover
+        color: $active-color !important
+// End Common Styles
+
+//Custom Style  
+.copyright
+  p
+    margin-bottom: 0px
+// End Custom Style
+
+// Responsive
+//@media (min-width: 767px)
+
+//@media (min-width: 1200px)    
+
+//@media (min-width: 1600px)    
+// End Responsive
+
+
+// Remove Styles
+#aboutus, #testimonials, #contactus
+  background: $secondary-color
+  min-height: 400px
+  padding-top: 50px
+#home, #blog, #faq
+  background: $tertiary-color
+  min-height: 400px
+  padding-top: 50px
+// End Remove Styles
+

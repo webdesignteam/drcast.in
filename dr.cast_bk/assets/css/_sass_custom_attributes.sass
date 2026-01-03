@@ -1,0 +1,116 @@
+// Margin Class
+// Margin
+.m-0
+  margin:0px !important
+=m($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .m-#{$i * 2}
+      margin: ($i * 2)+px !important 
+
++m(2px, 10)
+// Margin Top 
+.mt-0
+  margin-top:0px !important
+=mt($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .mt-#{$i * 2}
+      margin-top: ($i * 2)+px !important 
+
++mt(2px, 10)
+// Margin bottom
+.mb-0
+  margin-bottom:0px !important
+=mb($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .mb-#{$i * 2}
+      margin-bottom: ($i * 2)+px !important 
+
++mb(2px, 10)
+// Margin Left
+.ml-0
+  margin-left:0px !important
+=ml($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .ml-#{$i * 2}
+      margin-left: ($i * 2)+px !important 
+
++ml(2px, 10)
+// Margin Right
+.mr-0
+  margin-right:0px !important
+=mr($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .mr-#{$i * 2}
+      margin-right: ($i * 2)+px !important 
+
++mr(2px, 10)
+
+// Padding Class
+// Padding Top
+.p-0
+  padding:0px !important
+=p($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .p-#{$i * 10} 
+      padding: ($i * 10)+px !important 
+
++p(2px, 10)
+// Padding Top
+.pt-0
+  padding-top:0px !important
+=pt($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .pt-#{$i * 10} 
+      padding-top: ($i * 10)+px !important 
+
++pt(2px, 10)
+// Padding bottom
+.pt-0
+  padding-bottom:0px !important
+=pb($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .pb-#{$i * 10} 
+      padding-bottom: ($i * 10)+px !important 
+
++pb(2px, 10)
+// Padding Right
+.pt-0
+  padding-right:0px !important
+=pr($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .pr-#{$i * 2} 
+      padding-right: ($i * 2)+px !important 
+
++pr(2px, 10)
+// Padding Left
+.pt-0
+  padding-left:0px !important
+=pl($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .pl-#{$i * 2} 
+      padding-left: ($i * 2)+px !important 
+
++pl(2px, 10)
+
+//Font Sizes
+=fs($height, $baseColor)
+  @for $i from 1 through 1 * 60
+    .fs-#{$i * 2} 
+      font-size: ($i * 2)+px !important 
+
++fs(2px, 30)
+
+//Animations Class
+=duration($height, $baseColor)
+  @for $i from 1 through 1 * 5
+    .duration-#{$i * 2} 
+      -webkit-animation-duration: ($i * 2)+s !important
+      animation-duration: ($i * 2)+s !important 
++duration(2s, 5)
+
+//Opacity
+=opacity($height, $baseColor)
+  @for $i from 1 through 1 * 100
+    .opacity-#{$i * 1} 
+      opacity: ($i * 1)+% !important 
++opacity(1%, 100)

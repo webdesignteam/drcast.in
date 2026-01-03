@@ -1,0 +1,39 @@
+/******Responsive media quaries section*****/
+/*large screen*/
+@media screen and (min-width: 1900px){
+
+}
+
+/* tablet view  */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    
+}
+
+/*mobile view*/
+@media (max-width: 767px) {
+
+}
+
+/* responsive styles for laptop */
+@media (max-width:1199px) {
+    .container {
+        width: 950px;
+    }
+}
+
+/* responsive styles for tablet/ipad */
+@media (max-width:979px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* responsive styles for mobile */
+@media (max-width:767px) {
+    .container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /demo_1/
+RewriteCond $1 !^(images|stylesheets|javascript)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /demo_1/index.php/$1 [L]
